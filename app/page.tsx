@@ -184,20 +184,22 @@ export default function RealBetterLandingPage() {
           </motion.p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <a
-              href="#get-access"
-              className="inline-flex items-center justify-center rounded-md bg-red-600 text-white font-semibold px-6 py-3 shadow-md hover:bg-red-700 transition"
-            >
-              Book Demo
-            </a>
+  <a
+    href="#get-access"
+    className="inline-flex items-center justify-center rounded-full bg-red-600 text-white font-semibold px-7 py-3 shadow-md hover:bg-red-700 transition group"
+  >
+    Book Demo
+    <span className="ml-2 inline-block animate-move-arrow">←</span>
+  </a>
 
-            <a
-              href="#demo"
-              className="inline-flex items-center justify-center rounded-md border border-red-600 text-white/90 px-5 py-3 hover:bg-red-700/20 transition"
-            >
-              Watch 60s Demo
-            </a>
-          </div>
+  <a
+    href="#demo"
+    className="inline-flex items-center justify-center rounded-full border border-red-600 text-white/90 px-6 py-3 hover:bg-red-700/20 transition group"
+  >
+    Watch Demo Video
+  </a>
+</div>
+
 
           <div className="mt-6 text-sm text-white/80">
             <span className="mr-4">✅ 1,000+ Gurgaon Agents</span>
@@ -431,6 +433,8 @@ export default function RealBetterLandingPage() {
           className="px-8 py-4 bg-red-600 text-white rounded-full font-semibold shadow-lg hover:bg-red-700 transition"
         >
           Book Your Free Demo
+              <span className="ml-2 inline-block animate-move-arrow">→</span>
+
         </a>
       </motion.div>
     </section>
@@ -766,14 +770,16 @@ export default function RealBetterLandingPage() {
     </motion.p>
 
     <motion.a
-      href="#book-demo" // Replace with your actual demo booking link
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      className="inline-block px-8 py-4 bg-red-500 text-white font-semibold rounded-2xl shadow-lg hover:bg-red-600 transition-colors duration-300"
-    >
-      Book My Demo
-    </motion.a>
+  href="#book-demo"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  className="inline-flex items-center px-8 py-4 bg-red-500 text-white font-semibold rounded-full shadow-lg hover:bg-red-600 transition-colors duration-300 group"
+>
+  Book My Demo
+  <span className="ml-2 inline-block animate-move-arrow">→</span>
+</motion.a>
+
   </div>
 </section>
 

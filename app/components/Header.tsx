@@ -37,17 +37,18 @@ export default function Header() {
 
         {/* Book Demo CTA */}
         <div className="flex items-center">
-          <a
-            href="#book-demo"
-            className={`inline-flex items-center justify-center rounded-md font-semibold px-5 py-2 shadow-md transition-all duration-300 ${
-              scrolled
-                ? "bg-red-600 text-white hover:bg-red-700"
-                : "bg-red-500/90 text-white hover:bg-red-600"
-            }`}
-          >
-            Book Demo
-          </a>
-        </div>
+  <a
+    href="#book-demo"
+    className={`inline-flex items-center justify-center rounded-full font-semibold px-6 py-2.5 shadow-md transition-all duration-300 ${
+      scrolled
+        ? "bg-red-600 text-white hover:bg-red-700"
+        : "bg-red-500/90 text-white hover:bg-red-600"
+    }`}
+  >
+    Book Demo
+  </a>
+</div>
+
       </div>
     </header>
   );
