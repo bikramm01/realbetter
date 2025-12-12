@@ -13,12 +13,13 @@ export default function Header() {
 
   return (
     <header
-      className={`
-        fixed top-4 left-0 right-0 z-50 mx-auto transition-all duration-500
-        ${scrolled 
-          ? "h-14 bg-white shadow-md rounded-xl w-[90%] md:w-[80%]" 
-          : "h-20 bg-transparent w-full"}
-      `}
+  className={`
+    fixed top-4 left-0 right-0 z-50 mx-auto overflow-hidden
+    transition-all duration-500
+    ${scrolled 
+      ? "h-14 bg-white shadow-md rounded-full w-[90%] md:w-[80%]" 
+      : "h-20 bg-transparent rounded-full w-full"}
+  `}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-full flex items-center justify-between">
         
