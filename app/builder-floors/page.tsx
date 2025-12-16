@@ -249,6 +249,23 @@ export default function BuilderFloorsPage() {
             <span className="text-red-600">CORRECT</span> hai.”
           </blockquote>
         </motion.div>
+
+        <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="mt-12 flex justify-center"
+              >
+                <a
+                  href="#book-demo"
+                  className="px-8 py-4 bg-red-600 text-white rounded-full font-semibold shadow-lg hover:bg-red-700 transition"
+                >
+                  Book Your Free Demo
+                      <span className="ml-2 inline-block animate-move-arrow">→</span>
+        
+                </a>
+              </motion.div>
+          
       </section>
 
       <section className="py-20 bg-white">
