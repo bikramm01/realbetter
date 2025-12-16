@@ -107,7 +107,7 @@ export default function BuilderFloorsPage() {
           className="relative max-w-7xl mx-auto px-6 py-28 text-center"
         >
           <h1 className="text-4xl md:text-5xl font-extrabold">
-            REALBETTER — BUILDER FLOORS FOR <br /> REAL ESTATE AGENTS
+            REALBETTER - BUILDER FLOORS FOR <br /> REAL ESTATE AGENTS
           </h1>
 
           <p className="mt-6 text-xl font-semibold text-red-400">
@@ -145,7 +145,7 @@ export default function BuilderFloorsPage() {
             variants={fadeUp}
             className="text-3xl font-extrabold text-center mb-12"
           >
-            🔥 BUILDER FLOOR AGENTS — THIS IS YOUR DAILY PAIN
+            🔥 BUILDER FLOOR AGENTS - THIS IS YOUR DAILY PAIN
           </motion.h2>
 
           <motion.div
@@ -176,7 +176,7 @@ export default function BuilderFloorsPage() {
               <p>
                 <b>Client says:</b> “20–25 options dikhao”
               </p>
-              <p>Competition is crazy — same floor sold by 10 agents</p>
+              <p>Competition is crazy - same floor sold by 10 agents</p>
               <p>Availability turns out to be fake / outdated</p>
 
               <ul className="space-y-1">
