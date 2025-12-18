@@ -22,7 +22,7 @@ export default function AgentOrbit() {
           {/* LEFT — TEXT */}
           <div className="space-y-6 text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-extrabold">
-              Agents Love RealBetter
+              ❤️ Agents Love RealBetter
             </h2>
 
             <p className="text-lg text-gray-600 max-w-md mx-auto md:mx-0">
