@@ -92,117 +92,170 @@ export default function BuilderFloorsPage() {
   return (
     <main className="bg-white text-gray-900">
       <Header />
+ <header
+  className="bg-cover bg-center bg-no-repeat relative"
+  style={{
+    backgroundImage: "url('/images/gurgaon-hero.jpg')", // Replace with your image path
+  }}
+>
+  {/* Gradient overlay for better readability */}
+  <div className="bg-gradient-to-r from-black/70 via-black/50 to-black/70 backdrop-blur-sm">
+    <div className="max-w-7xl mx-auto px-6 lg:px-8 py-25 lg:py-28">
+      <div className="grid lg:grid-cols-2 gap-10 items-center">
+        {/* Left: Hero text */}
+        <div>
+          <motion.h1
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-md"
+          >
+           Gurgaon mein Builder Floors chahiye?<span className="underline decoration-red-400/60"><br/>RealBetter</span> pe aaiye
+          </motion.h1>
 
-      {/* ================= HERO ================= */}
-      <section className="relative bg-black text-white overflow-hidden">
-        <Image
-          src="/images/gurgaon-hero.jpg"
-          alt="Gurgaon Builder Floors"
-          fill
-          priority
-          className="object-cover opacity-30"
-        />
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.15 }}
+            className="mt-6 text-lg lg:text-xl max-w-xl text-white/90 drop-shadow"
+          >
+           Builder Floors Agents: Your next deal is already on RealBetter.
+ Daily updated floors. Verified. Presentable. Ready to sell
+          </motion.p>
 
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeUp}
-          className="relative max-w-7xl mx-auto px-6 py-28 text-center"
-        >
-          <h1 className="text-4xl md:text-5xl font-extrabold">
-            REALBETTER - BUILDER FLOORS FOR <br /> REAL ESTATE AGENTS
-          </h1>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+  <a
+    href="#get-access"
+    className="inline-flex items-center justify-center rounded-full bg-red-600 text-white font-semibold px-7 py-3 shadow-md hover:bg-red-700 transition group"
+  >
+    Book Demo
+    <span className="ml-2 inline-block animate-move-arrow">←</span>
+  </a>
 
-          <p className="mt-6 text-xl font-semibold text-red-400">
-            6000+ VERIFIED NEW BUILDER FLOORS IN GURGAON
-          </p>
+  <a
+    href="#demo"
+    className="inline-flex items-center justify-center rounded-full border border-red-600 text-white/90 px-6 py-3 hover:bg-red-700/20 transition group"
+  >
+    Watch Demo Video
+  </a>
+</div>
 
-          <p className="mt-4 text-lg text-white/90">
-            Talk directly to 1500+ builders · Fresh · Verified · Ready to sell
-          </p>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#demo"
-              className="px-8 py-4 bg-red-600 rounded-full font-semibold hover:bg-red-700 transition"
-            >
-              👉 Book a Free Demo
-            </a>
-            <a
-              href="#inventory"
-              className="px-8 py-4 border border-white/40 rounded-full hover:bg-white/10 transition"
-            >
-              👉 Search Verified Builder Floors
-            </a>
+          <div className="mt-6 text-sm text-white/80">
+            <span className="mr-4">✅ 1,000+ Gurgaon Agents</span>
+            <span className="mr-4">✅ Daily Fresh Updates</span>
+            <span>✅ Verified Builders & Owners</span>
           </div>
-        </motion.div>
-      </section>
-
-      {/* ================= DAILY PAIN ================= */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeUp}
-            className="text-3xl font-extrabold text-center mb-12"
-          >
-            🔥 BUILDER FLOOR AGENTS - THIS IS YOUR DAILY PAIN
-          </motion.h2>
-
-          <motion.div
-            className="grid md:grid-cols-2 gap-10 items-center"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <motion.div variants={fadeLeft} className="relative">
-              <Image
-                src="/images/agent-frustrated.png"
-                alt="Frustrated builder floor agent"
-                width={600}
-                height={450}
-                className="rounded-2xl shadow-lg object-cover"
-              />
-              <div className="absolute bottom-3 left-3 bg-black/60 text-white text-xs px-3 py-1 rounded-full">
-                Every builder floor agent has lived this moment
-              </div>
-            </motion.div>
-
-            <motion.div
-              variants={fadeRight}
-              className="bg-white rounded-2xl shadow p-8 space-y-4 text-lg"
-            >
-              <p>Let’s be honest 👇</p>
-              <p>
-                <b>Client says:</b> “20–25 options dikhao”
-              </p>
-              <p>Competition is crazy - same floor sold by 10 agents</p>
-              <p>Availability turns out to be fake / outdated</p>
-
-              <ul className="space-y-1">
-                <li>Photos? ❌</li>
-                <li>Construction status? ❌</li>
-                <li>Exact location? ❌</li>
-                <li>Builder ka direct contact? ❌</li>
-              </ul>
-
-              <div className="pt-4 font-semibold">
-                You lose:
-                <ul className="list-disc ml-6 mt-2">
-                  <li>Time</li>
-                  <li>Client trust</li>
-                  <li>And finally… the deal</li>
-                </ul>
-              </div>
-            </motion.div>
-          </motion.div>
         </div>
-      </section>
+<div className="relative mt-10 lg:mt-0 w-full h-[420px] lg:h-[480px] rounded-3xl overflow-hidden shadow-2xl">
+  <Image
+    src="/images/builder-floor-hero.png"
+    alt="Premium Builder Floor Gurgaon"
+    fill
+    priority
+    className="object-cover"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent" />
+</div>
 
-   {/* ================= REAL PROBLEM ================= */}
+
+
+      </div>
+    </div>
+  </div>
+</header>
+    
+      {/* ================= DAILY PAIN ================= */}
+     <section className="py-20 bg-gray-50">
+  <div className="max-w-6xl mx-auto px-6">
+    <motion.h2
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={fadeUp}
+      className="text-3xl font-extrabold text-center mb-12"
+    >
+      Builder Floor Agents — This Is Your Daily Reality
+    </motion.h2>
+
+    <motion.div
+      className="grid md:grid-cols-2 gap-10 items-center"
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
+      {/* Left Image */}
+      <motion.div variants={fadeLeft} className="relative">
+        <Image
+          src="/images/agent-frustrated.png"
+          alt="Frustrated builder floor agent"
+          width={600}
+          height={450}
+          className="rounded-2xl shadow-lg object-cover"
+        />
+        <div className="absolute bottom-3 left-3 bg-black/60 text-white text-xs px-3 py-1 rounded-full">
+          A moment every builder floor agent recognizes
+        </div>
+      </motion.div>
+
+      {/* Right Content */}
+      <motion.div
+        variants={fadeRight}
+        className="bg-white rounded-2xl shadow p-8 space-y-5 text-lg"
+      >
+        <p className="font-medium text-gray-800">Let’s be honest.</p>
+
+        <p>
+          <span className="font-semibold">Client expectation:</span>{" "}
+          “Show me 20–25 options.”
+        </p>
+
+        <p className="text-gray-700">
+          Heavy competition — the same floor circulated by multiple agents.
+        </p>
+
+        <p className="text-gray-700">
+          Availability turns out to be outdated or inaccurate.
+        </p>
+
+        {/* Missing Info List */}
+        <ul className="space-y-2 pt-2">
+          {[
+            "Property photos",
+            "Construction status",
+            "Exact location details",
+            "Direct builder contact",
+          ].map((item) => (
+            <li key={item} className="flex items-center gap-2 text-gray-700">
+              <svg
+                className="w-4 h-4 text-red-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        {/* Losses */}
+        <div className="pt-4 font-semibold text-gray-900">
+          The cost:
+          <ul className="list-disc ml-6 mt-2 font-normal text-gray-700">
+            <li>Wasted time</li>
+            <li>Loss of client trust</li>
+            <li>Missed closings</li>
+          </ul>
+        </div>
+      </motion.div>
+    </motion.div>
+  </div>
+</section>
+
+  {/* ================= REAL PROBLEM ================= */}
 <section className="py-20 bg-white">
   <motion.div
     className="max-w-6xl mx-auto px-6"
@@ -214,32 +267,54 @@ export default function BuilderFloorsPage() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
       {/* TEXT – LEFT */}
-      <div className="space-y-5 text-center md:text-left">
-        <h2 className="text-3xl font-extrabold">
-          ❌ THE REAL PROBLEM IS NOT CLIENTS
+      <div className="space-y-6 text-center md:text-left">
+        <h2 className="text-3xl font-extrabold flex items-center gap-3 justify-center md:justify-start">
+          <svg
+            className="w-7 h-7 text-red-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path strokeWidth={2} d="M18 6L6 18M6 6l12 12" />
+          </svg>
+          The Real Problem Is Not Clients
         </h2>
 
-        <p className="text-lg font-semibold text-red-600">
-          UNORGANISED BUILDER FLOOR INVENTORY
+        <p className="text-lg font-semibold text-red-600 uppercase tracking-wide">
+          Unorganised Builder Floor Inventory
         </p>
 
-        <ul className="text-lg space-y-2 font-medium">
-          <li>• Scattered listings</li>
-          <li>• Unverified information</li>
-          <li>• WhatsApp-based inventory</li>
-          <li>• Forward-to-forward confusion</li>
-          <li>• No single source of truth</li>
+        <ul className="text-lg space-y-3 font-medium text-gray-800">
+          {[
+            "Scattered listings across multiple sources",
+            "Unverified or outdated information",
+            "WhatsApp-based inventory sharing",
+            "Forward-to-forward confusion",
+            "No single source of truth",
+          ].map((item) => (
+            <li key={item} className="flex items-start gap-3">
+              <svg
+                className="w-5 h-5 mt-1 text-gray-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+              {item}
+            </li>
+          ))}
         </ul>
 
-        <p className="font-bold text-xl">
-          When inventory is weak, agent loses power.
+        <p className="font-bold text-xl text-gray-900 pt-2">
+          Weak inventory removes the agent’s advantage.
         </p>
       </div>
 
       {/* IMAGE – RIGHT */}
       <div className="flex justify-center md:justify-end">
         <img
-          src="/images/problem-chaos.png" // use the generated image here
+          src="/images/problem-chaos.png"
           alt="Unorganised builder floor inventory chaos"
           className="w-full max-w-md rounded-xl shadow-lg"
         />
@@ -277,7 +352,6 @@ export default function BuilderFloorsPage() {
       <span className="text-red-600">CORRECT</span> hai.”
     </blockquote>
 
-  {/* ================= SOLUTION (MAIN POINTS ONLY) ================= */}
 {/* ================= REALBETTER VALUE ================= */}
 <div className="mt-14 bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
   <h3 className="text-2xl font-extrabold text-center mb-6">
@@ -433,7 +507,7 @@ export default function BuilderFloorsPage() {
 
 
 
-/<AgentLove />
+<AgentLove />
 
 
 <section className="w-full py-20 bg-white flex justify-center" id="demo">
@@ -470,6 +544,53 @@ export default function BuilderFloorsPage() {
 </div>
 
 
+  </div>
+</section>
+{/* ================= RIGHT FOR YOU ================= */}
+<section className="py-20 bg-gray-50">
+  <div className="max-w-5xl mx-auto px-6">
+    
+    {/* IMAGE */}
+    <div className="flex justify-center mb-10">
+      <Image
+        src="/images/happy-agent-closing-deal.png" // replace with your image path
+        alt="Happy real estate agent closing a builder floor deal"
+        width={420}
+        height={280}
+        className="rounded-2xl shadow-lg object-cover"
+        priority
+      />
+    </div>
+
+    {/* TITLE */}
+    <h2 className="text-3xl font-extrabold text-center mb-10">
+      Is RealBetter Right for You?
+    </h2>
+
+    {/* CARDS */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      {/* PERFECT FOR */}
+      <div className="bg-white p-6 rounded-xl shadow border border-red-100">
+        <h3 className="font-bold mb-3 text-red-600">✅ Perfect For</h3>
+        <ul className="space-y-2">
+          <li>✔ Builder floor agents in Gurgaon</li>
+          <li>✔ Agents closing ₹5Cr+ deals</li>
+          <li>✔ Professionals who value accuracy</li>
+        </ul>
+      </div>
+
+      {/* NOT FOR */}
+      <div className="bg-white p-6 rounded-xl shadow border border-gray-200">
+        <h3 className="font-bold mb-3 text-gray-700">❌ Not For</h3>
+        <ul className="space-y-2">
+          <li>✖ Random WhatsApp brokers</li>
+          <li>✖ Fake inventory sellers</li>
+          <li>✖ Non-Gurgaon markets</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -687,36 +808,6 @@ export default function BuilderFloorsPage() {
         </motion.div>
       </section>
 
-
-{/* ================= RIGHT FOR YOU ================= */}
-<section className="py-20 bg-gray-50">
-  <div className="max-w-5xl mx-auto px-6">
-    <h2 className="text-3xl font-extrabold text-center mb-10">
-      Is RealBetter Right for You?
-    </h2>
-
-    <div className="grid md:grid-cols-2 gap-6">
-      <div className="bg-white p-6 rounded-xl shadow border border-red-100">
-        <h3 className="font-bold mb-3 text-red-600">✅ Perfect For</h3>
-        <ul className="space-y-2">
-          <li>✔ Builder floor agents in Gurgaon</li>
-          <li>✔ Agents closing ₹5Cr+ deals</li>
-          <li>✔ Professionals who value accuracy</li>
-        </ul>
-      </div>
-
-      <div className="bg-white p-6 rounded-xl shadow border border-gray-200">
-        <h3 className="font-bold mb-3 text-gray-700">❌ Not For</h3>
-        <ul className="space-y-2">
-          <li>✖ Random WhatsApp brokers</li>
-          <li>✖ Fake inventory sellers</li>
-          <li>✖ Non-Gurgaon markets</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
       {/* ================= FINAL CTA ================= */}
       <section className="py-24 bg-red-600 text-white text-center">
         <motion.div
@@ -740,7 +831,7 @@ export default function BuilderFloorsPage() {
             className="inline-block px-10 py-5 bg-white text-red-600 font-bold rounded-full shadow
                        hover:bg-gray-100 hover:scale-[1.03] transition-transform"
           >
-            👉 Sign up free · Earn today · Pay monthly
+            Sign up free · Earn today · Pay monthly
           </a>
         </motion.div>
       </section>
@@ -769,5 +860,20 @@ function Testimonial({ quote, name }: { quote: string; name: string }) {
       <p className="text-sm text-gray-800">“{quote}”</p>
       <cite className="mt-2 block text-xs text-gray-600">— {name}</cite>
     </blockquote>
+  );
+}
+
+function SegmentCard({ title, subtitle, color, icon }: { title: string; subtitle: string; color?: string; icon?: React.ReactNode }) {
+  return (
+    <div
+      className="flex items-center gap-4 rounded-lg p-4 shadow-lg"
+      style={{ backgroundColor: color }}
+    >
+      {icon && <div className="flex-shrink-0">{icon}</div>}
+      <div>
+        <div className="font-semibold text-white">{title}</div>
+        <div className="text-sm text-white/90">{subtitle}</div>
+      </div>
+    </div>
   );
 }
