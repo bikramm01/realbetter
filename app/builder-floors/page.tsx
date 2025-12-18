@@ -199,74 +199,165 @@ export default function BuilderFloorsPage() {
         </div>
       </section>
 
-      {/* ================= REAL PROBLEM ================= */}
-      <section className="py-20 bg-white">
-        <motion.div
-          className="max-w-4xl mx-auto px-6 text-center space-y-6"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeUp}
-        >
-          <h2 className="text-3xl font-extrabold">
-            ❌ THE REAL PROBLEM IS NOT CLIENTS
-          </h2>
-          <p className="text-lg font-semibold text-red-600">
-            UNORGANISED BUILDER FLOOR INVENTORY
-          </p>
-          <ul className="text-lg space-y-1">
-            <li>Scattered</li>
-            <li>Unverified</li>
-            <li>WhatsApp-based</li>
-            <li>Forward-to-forward</li>
-            <li>Full of confusion</li>
-          </ul>
-          <p className="font-bold text-xl">
-            When inventory is weak, agent loses power.
-          </p>
-        </motion.div>
-      </section>
+   {/* ================= REAL PROBLEM ================= */}
+<section className="py-20 bg-white">
+  <motion.div
+    className="max-w-6xl mx-auto px-6"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={fadeUp}
+  >
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-      {/* ================= SOLUTION ================= */}
-      <section className="py-20 bg-red-50">
-        <motion.div
-          className="max-w-5xl mx-auto px-6 text-center space-y-6"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeUp}
-        >
-          <h2 className="text-3xl font-extrabold">
-            ✅ REALBETTER SOLVES THIS — COMPLETELY
-          </h2>
-          <p className="text-lg font-semibold">
-            BUILT ONLY for Builder Floor Agents
-          </p>
-          <blockquote className="bg-white p-6 rounded-xl shadow text-xl font-bold">
-            “Agar Gurgaon me hai, toh RealBetter pe hai.
-            <br />
-            Aur agar RealBetter pe hai, toh matlab{" "}
-            <span className="text-red-600">CORRECT</span> hai.”
-          </blockquote>
-        </motion.div>
+      {/* TEXT – LEFT */}
+      <div className="space-y-5 text-center md:text-left">
+        <h2 className="text-3xl font-extrabold">
+          ❌ THE REAL PROBLEM IS NOT CLIENTS
+        </h2>
 
-        <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="mt-12 flex justify-center"
-              >
-                <a
-                  href="#book-demo"
-                  className="px-8 py-4 bg-red-600 text-white rounded-full font-semibold shadow-lg hover:bg-red-700 transition"
-                >
-                  Book Your Free Demo
-                      <span className="ml-2 inline-block animate-move-arrow">→</span>
-        
-                </a>
-              </motion.div>
-          
-      </section>
+        <p className="text-lg font-semibold text-red-600">
+          UNORGANISED BUILDER FLOOR INVENTORY
+        </p>
+
+        <ul className="text-lg space-y-2 font-medium">
+          <li>• Scattered listings</li>
+          <li>• Unverified information</li>
+          <li>• WhatsApp-based inventory</li>
+          <li>• Forward-to-forward confusion</li>
+          <li>• No single source of truth</li>
+        </ul>
+
+        <p className="font-bold text-xl">
+          When inventory is weak, agent loses power.
+        </p>
+      </div>
+
+      {/* IMAGE – RIGHT */}
+      <div className="flex justify-center md:justify-end">
+        <img
+          src="/images/problem-chaos.png" // use the generated image here
+          alt="Unorganised builder floor inventory chaos"
+          className="w-full max-w-md rounded-xl shadow-lg"
+        />
+      </div>
+
+    </div>
+  </motion.div>
+</section>
+
+{/* ================= SOLUTION ================= */}
+<section className="py-20 bg-red-50">
+  <motion.div
+    className="max-w-6xl mx-auto px-6"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={fadeUp}
+  >
+    {/* HEADER */}
+    <div className="text-center space-y-4">
+      <h2 className="text-3xl font-extrabold">
+        ✅ REALBETTER SOLVES THIS — COMPLETELY
+      </h2>
+
+      <p className="text-lg font-semibold">
+        BUILT ONLY for Builder Floor Agents
+      </p>
+    </div>
+
+    {/* QUOTE / TRUST LINE */}
+    <blockquote className="mt-8 bg-white p-6 rounded-xl shadow text-xl font-bold text-center max-w-3xl mx-auto">
+      “Agar Gurgaon me hai, toh RealBetter pe hai.
+      <br />
+      Aur agar RealBetter pe hai, toh matlab{" "}
+      <span className="text-red-600">CORRECT</span> hai.”
+    </blockquote>
+
+    {/* SOLUTION CARDS */}
+    {/* SOLUTION CARDS */}
+<div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+
+  <div className="bg-white rounded-xl p-6 shadow flex gap-4">
+    <span className="text-2xl">✅</span>
+    <div>
+      <h4 className="font-bold">Verified Builder Floors</h4>
+      <p className="text-sm text-gray-600">
+        Sirf real inventory — fake listings aur confusion bilkul nahi
+      </p>
+    </div>
+  </div>
+
+  <div className="bg-white rounded-xl p-6 shadow flex gap-4">
+    <span className="text-2xl">🤝</span>
+    <div>
+      <h4 className="font-bold">Direct Builder & Agent Network</h4>
+      <p className="text-sm text-gray-600">
+        Seedha sahi logon se baat — no unnecessary middlemen
+      </p>
+    </div>
+  </div>
+
+  <div className="bg-white rounded-xl p-6 shadow flex gap-4">
+    <span className="text-2xl">📍</span>
+    <div>
+      <h4 className="font-bold">Hyper-Local Gurgaon Control</h4>
+      <p className="text-sm text-gray-600">
+        Apne sector, apna block — poora local market control
+      </p>
+    </div>
+  </div>
+
+  <div className="bg-white rounded-xl p-6 shadow flex gap-4">
+    <span className="text-2xl">⏱️</span>
+    <div>
+      <h4 className="font-bold">Zero Time Waste</h4>
+      <p className="text-sm text-gray-600">
+        Random calls band — sirf kaam ke conversations
+      </p>
+    </div>
+  </div>
+
+  <div className="bg-white rounded-xl p-6 shadow flex gap-4">
+    <span className="text-2xl">📈</span>
+    <div>
+      <h4 className="font-bold">Faster Closings</h4>
+      <p className="text-sm text-gray-600">
+        Buyer already educated — deals jaldi close hoti hain
+      </p>
+    </div>
+  </div>
+
+  <div className="bg-white rounded-xl p-6 shadow flex gap-4">
+    <span className="text-2xl">🎯</span>
+    <div>
+      <h4 className="font-bold">Genuine Buyer Leads Only</h4>
+      <p className="text-sm text-gray-600">
+        Budget, location aur intent pehle se clear
+      </p>
+    </div>
+  </div>
+
+</div>
+
+  </motion.div>
+
+  {/* CTA */}
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    className="mt-14 flex justify-center"
+  >
+    <a
+      href="#book-demo"
+      className="px-10 py-4 bg-red-600 text-white rounded-full font-semibold shadow-lg hover:bg-red-700 transition"
+    >
+      Book Your Free Demo
+      <span className="ml-2 inline-block animate-move-arrow">→</span>
+    </a>
+  </motion.div>
+</section>
 
       <section className="py-20 bg-white">
   <div className="max-w-6xl mx-auto px-6 text-center">
