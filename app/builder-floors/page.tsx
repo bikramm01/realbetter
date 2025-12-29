@@ -110,7 +110,7 @@ export default function BuilderFloorsPage() {
             transition={{ duration: 0.6 }}
             className="text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight text-white drop-shadow-md"
           >
-           Options. Options. Options.<span className="underline decoration-red-400/60"><br/>Gurgaon</span> Builder Floors. 10× Your Closures.
+          Gurgaon mein Builder Floors chahiye?<span className="underline decoration-red-400/60"><br/>RealBetter</span> pe aaiye.
           </motion.h1>
 
           <motion.p
