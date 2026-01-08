@@ -79,7 +79,7 @@ export default function SubscriptionClient() {
 />
 
 {/* DARK GRADIENT + BLUR */}
-<div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-black/95 backdrop-blur-[3px]" />
+<div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/70 backdrop-blur-[3px]" />
 
 {/* VIGNETTE (edges darker, center focus) */}
 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.55)_70%)]" />
