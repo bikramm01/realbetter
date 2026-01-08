@@ -64,23 +64,25 @@ const item: Variants = {
 export default function SubscriptionClient() {
   const [plan, setPlan] = useState<"annual" | "monthly">("annual");
 
+  // 👉 ADD EXIT POPUP STATE + LOGIC HERE
+
   return (
     <main className="bg-white text-gray-900">
   <Header />
 {/* ================= FULL WIDTH HERO ================= */}
-<section className="relative min-h-[90vh] flex items-center justify-center py-24 overflow-hidden">
+<section className="relative min-h-[90vh] flex items-center justify-center py-25 overflow-hidden">
 
-  {/* BACKGROUND IMAGE */}
-  <div
-    className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: "url('/images/hero-dashboard.png')" }}
-  />
+ {/* BACKGROUND IMAGE */}
+<div
+  className="absolute inset-0 bg-cover bg-center scale-105"
+  style={{ backgroundImage: "url('/images/hero-dashboard.png')" }}
+/>
 
-  {/* DARK OVERLAY */}
-  <div className="absolute inset-0 bg-black/10" />
+{/* DARK GRADIENT + BLUR */}
+<div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/70 to-black/95 backdrop-blur-[3px]" />
 
-  {/* GRADIENT FOR DEPTH */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/90" />
+{/* VIGNETTE (edges darker, center focus) */}
+<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.55)_70%)]" />
 
   {/* CONTENT */}
   <motion.div
@@ -300,7 +302,7 @@ export default function SubscriptionClient() {
 
     <AgentLove />
 {/* ================= WHAT YOU GET ================= */}
-<section className="py-24 bg-white">
+<section id="features" className="py-24  bg-white">
   <div className="max-w-7xl mx-auto px-5">
 
     {/* HEADER */}
@@ -475,7 +477,7 @@ export default function SubscriptionClient() {
 
 
 {/* ================= HOW IT WORKS ================= */}
-<section className="py-24 bg-gray-50">
+<section id="how" className="py-24 bg-gray-50">
   <div className="max-w-7xl mx-auto px-5">
 
     {/* HEADER */}
@@ -1073,13 +1075,5 @@ export default function SubscriptionClient() {
         </div>
       </section>
     </main>
-  );
-}
-function Testimonial({ quote, name }: { quote: string; name: string }) {
-  return (
-    <blockquote className="p-4 bg-red-50 rounded-lg border-l-4 border-red-600">
-      <p className="text-sm text-gray-800">“{quote}”</p>
-      <cite className="mt-2 block text-xs text-gray-600">— {name}</cite>
-    </blockquote>
   );
 }
